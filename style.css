@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .game_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .score_board {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .game_board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 2px;
+    background-color: #dcdcdc;
+    border: 2px solid #dcdcdc;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    box-sizing: border-box;
+  }
+  
+  .snake {
+    background-color: rgb(68, 139, 68);
+  }
+  
+  .apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+  }
+  
+  .apple::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: rgb(167, 36, 36);
+    border-radius: 20%;
+  }
+
+  .rules_text {
+    color: rgb(137, 137, 137);
+  }
+  
+  .restart_button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
